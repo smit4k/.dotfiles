@@ -3,3 +3,4 @@
 - Neovim
 - Alacritty
 - starship
+- neofetch
