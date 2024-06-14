@@ -15,6 +15,13 @@ truncation_length = 0
 truncate_to_repo = true
 truncation_symbol = " "
 
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+".config" = " "
+
 # Before all the version info (python, nodejs, php, etc.)
 [git_status]
 style = "white"
