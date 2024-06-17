@@ -1,4 +1,5 @@
 My Must-Have Gnome Extensions
+- GSConnect (https://extensions.gnome.org/extension/1319/gsconnect/)
 - Caffeine (https://extensions.gnome.org/extension/517/caffeine/)
 - Dash to Dock (https://extensions.gnome.org/extension/307/dash-to-dock/)
 - Emoji Copy (https://extensions.gnome.org/extension/6242/emoji-copy/)
