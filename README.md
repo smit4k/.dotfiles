@@ -4,3 +4,6 @@
 - Alacritty
 - starship
 - neofetch
+- hyprland
+    - hyprlock
+- waybar
