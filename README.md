@@ -6,4 +6,5 @@
 - neofetch
 - hyprland
     - hyprlock
+    - hyprpaper
 - waybar
