@@ -8,3 +8,4 @@
     - hyprlock
     - hyprpaper
 - waybar
+- gtk 3.0
