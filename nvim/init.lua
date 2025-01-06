@@ -26,22 +26,13 @@ require("kanagawa").setup({
     },
 })
 
-require("onedark").setup({
-    style = "warmer",
-})
 require("kanagawa")
 local c = require("vscode.colors").get_colors()
 require("vscode").setup({
     italic_comments = true,
     underline_links = true,
 })
-require("ayu").setup({
-    mirage = true,
-    terminal = true,
-    overrides = {},
-})
 -- Lua
-require("decay")
 -- Plugins
 require("colorizer").setup()
 require("barbecue")
