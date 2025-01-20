@@ -1,7 +1,7 @@
 # .dotfiles
 ## My configs
 - Neovim
-- fish shell
+- fish
 - Alacritty
 - starship
 - neofetch*
