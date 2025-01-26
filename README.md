@@ -9,6 +9,7 @@
     - hyprlock
     - hyprpaper
 - waybar
+- wofi
 - gtk 3.0
 
 > [!WARNING]
