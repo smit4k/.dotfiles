@@ -29,6 +29,7 @@ return {
         -- stylua: ignore
         center = {
           { action = 'lua LazyVim.pick()()',                           desc = " Find File",       icon = " ", key = "f" },
+          { action = 'lua LazyVim.pick("projects")()',                 desc = " Projects",        icon = " ",  key = "p" },
           { action = "ene | startinsert",                              desc = " New File",        icon = " ", key = "n" },
           { action = 'lua LazyVim.pick("oldfiles")()',                 desc = " Recent Files",    icon = " ", key = "r" },
           { action = 'lua LazyVim.pick("live_grep")()',                desc = " Find Text",       icon = " ", key = "g" },
