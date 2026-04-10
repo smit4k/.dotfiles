@@ -1,0 +1,208 @@
+/* ===========================
+ *  Palette & constantes
+ * =========================== */
+
+@define-color base-bg rgba(40, 44, 52, 0.8);
+@define-color base-bg-solid #282c34;
+@define-color base-fg #abb2bf;
+
+@define-color ws-bg @base-bg;
+@define-color ws-bg-active @base-bg-solid;
+@define-color ws-bg-urgent #2c323c;
+
+@define-color ws-fg @base-fg;
+@define-color ws-fg-active #61afef;
+@define-color ws-fg-urgent #e06c75;
+
+@define-color mpris-border @base-bg-solid;
+
+@define-color cpu-fg #98c379;
+@define-color mem-fg #c678dd;
+@define-color clock-fg #56b6c2;
+@define-color clock-simple-fg #61afef;
+@define-color window-fg @base-fg;
+@define-color audio-fg #61afef;
+@define-color audio-muted-fg #5c6370;
+@define-color tray-fg #98c379;
+@define-color bluetooth-fg #56b6c2;
+@define-color battery-fg #e5c07b;
+@define-color logo-fg #61afef;
+@define-color cava-fg #98c379;
+@define-color power-fg #e06c75;
+
+@define-color tooltip-bg #21252b;
+@define-color tooltip-border #61afef;
+@define-color sep-fg #5c6370;
+
+/* ===========================
+ *  Global
+ * =========================== */
+
+window#waybar,
+window#waybar * {
+  min-height: 0;
+  min-width: 0;
+  font-family: Lexend, "JetBrainsMono NFP", monospace; 
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* ===========================
+ *  Modules génériques
+ * =========================== */
+
+#clock,
+#pulseaudio,
+#tray,
+#bluetooth,
+#battery,
+#custom-logo,
+#custom-power,
+#custom-spotify,
+#custom-cava,
+#custom-notification,
+#custom-launcher,
+#cpu,
+#network,
+#memory,
+#window {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: @base-bg;
+}
+
+/* ===========================
+ *  Workspaces
+ * =========================== */
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: @ws-bg;
+  color: @ws-fg;
+}
+
+#workspaces button:hover {
+  color: @base-bg-solid;
+  background-color: @base-fg;
+}
+
+#workspaces button.active {
+  background-color: @ws-bg-active;
+  color: @ws-fg-active;
+}
+
+#workspaces button.urgent {
+  background-color: @ws-bg-urgent;
+  color: @ws-fg-urgent;
+}
+
+/* ===========================
+ *  MPRIS
+ * =========================== */
+
+#mpris {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: @base-bg;
+}
+
+#mpris.playing {
+  color: #a6e3a1;
+}
+
+#mpris.paused {
+  color: #9399b2;
+}
+
+/* ===========================
+ *  États & couleurs modules
+ * =========================== */
+
+#cpu {
+  color: @cpu-fg;
+}
+
+#memory {
+  color: @mem-fg;
+}
+
+#clock {
+  color: @clock-fg;
+}
+
+#clock.simpleclock {
+  color: @clock-simple-fg;
+}
+
+#window {
+  color: @window-fg;
+}
+
+#pulseaudio {
+  color: @audio-fg;
+}
+
+#pulseaudio.muted {
+  color: @audio-muted-fg;
+}
+
+#tray {
+  color: @tray-fg;
+}
+
+#bluetooth {
+  color: @bluetooth-fg;
+}
+
+#battery {
+  color: @battery-fg;
+}
+
+#custom-launcher {
+  color: #1690cf;
+}
+
+#custom-logo {
+  color: @logo-fg;
+}
+
+#custom-cava {
+  color: @cava-fg;
+}
+
+#custom-power {
+  color: @power-fg;
+}
+
+/* ===========================
+ *  Divers
+ * =========================== */
+
+#custom-sep {
+  padding: 0;
+  color: @sep-fg;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+/* ===========================
+ *  Tooltips
+ * =========================== */
+
+tooltip {
+  background-color: @tooltip-bg;
+  border: 2px solid @tooltip-border;
+}
+
